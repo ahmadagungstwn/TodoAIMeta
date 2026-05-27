@@ -72,14 +72,6 @@ Build production:
 npm run build
 ```
 
-## Catatan Security
-
-File `.env` tidak boleh dipush ke GitHub dan sudah masuk `.gitignore`.
-
-`VITE_SUPABASE_ANON_KEY` boleh dipakai di frontend jika RLS Supabase sudah benar. Jangan pernah memakai Supabase service role key di frontend.
-
-`VITE_OPENROUTER_API_KEY` akan ikut terbaca di bundle frontend saat deploy karena memakai prefix `VITE_`. Untuk production yang lebih aman, pindahkan pemanggilan OpenRouter ke backend atau Supabase Edge Function.
-
 ## Migration
 
 Schema awal tersedia di folder:
