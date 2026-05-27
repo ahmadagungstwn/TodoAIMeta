@@ -19,6 +19,7 @@ Ideaku AI adalah aplikasi mobile-first untuk mencatat ide, mengelola kategori, m
 - React
 - TypeScript
 - Vite
+- PWA
 - Supabase
 - Tesseract.js untuk OCR gratis di browser
 - OpenRouter untuk chat AI
@@ -71,6 +72,33 @@ Build production:
 ```bash
 npm run build
 ```
+
+Preview hasil build:
+
+```bash
+npm run preview
+```
+
+## PWA
+
+App sudah dikonfigurasi sebagai Progressive Web App.
+
+Fitur PWA:
+
+- Manifest app untuk install ke perangkat
+- Service worker auto-update
+- Standalone display mode
+- Theme color sesuai brand Ideaku AI
+- App icon di `public/pwa-icon.svg`
+
+Untuk mengecek PWA secara lokal, jalankan:
+
+```bash
+npm run build
+npm run preview
+```
+
+Lalu buka URL preview di browser dan cek menu install app atau Lighthouse PWA audit.
 
 ## Migration
 
